@@ -77,6 +77,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.glass-button {
+  color: #f5f5f5;
+  background: rgba(18, 18, 20, 0.62);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
 /* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {

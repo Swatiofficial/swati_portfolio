@@ -166,7 +166,7 @@ export function Hero() {
             <button
               onClick={() => scrollToSection('#work')}
               type="button"
-              className="inline-flex items-center justify-center h-[48px] sm:h-[50px] text-xs sm:text-[13px] font-semibold tracking-wider uppercase px-6 sm:px-7 rounded-full bg-white text-black hover:bg-[#D7FF64] transition-all duration-300 shadow-md shadow-white/5 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#D7FF64]"
+              className="glass-button inline-flex items-center justify-center h-[48px] sm:h-[50px] text-xs sm:text-[13px] font-semibold tracking-wider uppercase px-6 sm:px-7 rounded-full hover:bg-[#D7FF64] hover:text-black transition-all duration-300 shadow-md shadow-white/5 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#D7FF64]"
             >
               Watch My Work
             </button>

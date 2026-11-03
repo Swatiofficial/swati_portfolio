@@ -34,6 +34,8 @@ For Google Drive videos, set access to **Anyone with the link — Viewer**. To a
 
 To configure the showreel, set `showreel.videoUrl` in the JSON file. Supported sources are Google Drive, YouTube/Shorts, and direct MP4/WebM URLs.
 
+The Selected Work gallery also loads its video collections from the server-side folder list in `lib/drive-folders.ts`. Keep those Drive folders shared as **Anyone with the link — Viewer**; the site renders dark video cards and opens each clip in the on-page player.
+
 ## Contact form setup
 
 The public contact email and phone number are configured in `site.contactEmail` and `site.contactPhone`. Contact form delivery requires a server-side provider configuration; do not put provider credentials in the JSON file.

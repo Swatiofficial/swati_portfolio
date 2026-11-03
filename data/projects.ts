@@ -9,6 +9,7 @@ export interface Project {
   category: ProjectCategory;
   source: VideoSource;
   videoUrl: string;
+  embedUrl?: string;
   previewVideoUrl?: string;
   thumbnailUrl?: string;
   description: string;

@@ -83,6 +83,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
 
   const parsed = parseVideoSource(project.videoUrl);
   const isShort = parsed.isShort || false;
+  const hasVideo = parsed.isValid || Boolean(project.embedUrl);
 
   return (
     <div
@@ -136,7 +137,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
             } bg-black flex items-center justify-center`}
           >
             {/* Loading Indicator */}
-            {isLoading && !loadError && parsed.isValid && (
+            {isLoading && !loadError && hasVideo && (
               <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm gap-2">
                 <Loader2 className="w-8 h-8 text-[#D7FF64] animate-spin" />
                 <span className="text-xs font-mono text-zinc-400">Loading stream...</span>
@@ -144,7 +145,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
             )}
 
             {/* Error or Unconfigured State */}
-            {!parsed.isValid || loadError ? (
+            {!hasVideo || loadError ? (
               <div className="flex flex-col items-center justify-center p-8 text-center max-w-md">
                 <AlertCircle className="w-10 h-10 text-amber-400 mb-3" />
                 <h3 className="text-sm font-semibold text-white mb-1">
@@ -154,7 +155,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
                   {parsed.errorMessage ||
                     'Add your Google Drive, YouTube, or MP4 link to a project in data/portfolio.json.'}
                 </p>
-                {project.videoUrl && (
+                {project.videoUrl && parsed.type !== 'drive' && (
                   <a
                     href={project.videoUrl}
                     target="_blank"
@@ -165,6 +166,21 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 )}
+              </div>
+            ) : project.embedUrl ? (
+              <div className="relative h-full w-full">
+                <iframe
+                  src={project.embedUrl}
+                  title={project.title}
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                  className="h-full w-full border-0"
+                  onLoad={() => setIsLoading(false)}
+                  onError={() => {
+                    setIsLoading(false);
+                    setLoadError(true);
+                  }}
+                />
               </div>
             ) : parsed.type === 'drive' ? (
               /* Google Drive Embed */
@@ -231,7 +247,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
                 *Shared via Google Drive
               </span>
             )}
-            {project.videoUrl && (
+            {project.videoUrl && parsed.type !== 'drive' && (
               <a
                 href={project.videoUrl}
                 target="_blank"

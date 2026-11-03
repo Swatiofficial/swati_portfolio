@@ -84,7 +84,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
                 handleScrollTo(e, '#contact');
               }
             }}
-            className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide bg-white text-black hover:bg-[#D7FF64] hover:text-black px-5 py-2 rounded-full transition-all duration-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#D7FF64] focus:ring-offset-2 focus:ring-offset-black"
+            className="glass-button hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide hover:bg-[#D7FF64] hover:text-black px-5 py-2 rounded-full transition-all duration-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#D7FF64] focus:ring-offset-2 focus:ring-offset-black"
           >
             <span>Contact</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -120,7 +120,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, '#contact')}
-              className="mt-2 text-center text-xs font-semibold uppercase tracking-wider bg-[#D7FF64] text-black py-2.5 rounded-xl transition-colors hover:bg-white"
+              className="mt-2 text-center text-xs font-semibold uppercase tracking-wider bg-[#D7FF64] text-black py-2.5 rounded-xl transition-colors hover:brightness-110"
             >
               Contact
             </a>
