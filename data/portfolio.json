@@ -1,0 +1,282 @@
+{
+  "site": {
+    "ownerName": "Swati Kumari",
+    "brandName": "Swati Kumari",
+    "titleRole": "Video Editor | Graphic Designer | Brand & Digital Design",
+    "tagline": "Brand & Digital Design | Video Editing | AI-Assisted Visual Storytelling",
+    "heroHeadline": "Visual stories built with clarity and purpose.",
+    "heroSupportingText": "Graphic Designer & Content Specialist",
+    "heroDescription": "Creative Video Editor and Graphic Designer with a strong foundation in digital content and visual storytelling. Experienced in designing brand-aligned creatives, high-performing social media assets, and marketing visuals. Skilled in combining design principles, audience insights, and AI-assisted workflows to create engaging, conversion-focused designs.",
+    "availabilityStatus": "Graphic Designer & Content Specialist at GRMI",
+    "contactEmail": "swatiofficial1002@gmail.com",
+    "contactPhone": "8434140757",
+    "about": {
+      "heading": "Creative thinking. Visual clarity. Meaningful stories.",
+      "bio": "I create brand-aligned design and video content for digital platforms. My work combines design principles, audience insights, and AI-assisted workflows to make content engaging and effective.",
+      "philosophy": "Strong visual storytelling brings together clear communication, consistent design, and an understanding of the audience.",
+      "interests": [
+        "Brand-aligned creative",
+        "Social media content",
+        "Video-first design",
+        "AI-assisted creative workflows"
+      ],
+      "portraitImage": ""
+    },
+    "socialLinks": []
+  },
+  "sectionCopy": {
+    "workTitle": "Selected Work",
+    "workSubtitle": "A selection of design and video projects will be added here.",
+    "workEmptyTitle": "Portfolio samples coming soon",
+    "workEmptyDescription": "Add real project links and details to the projects list in data/portfolio.json to showcase work here.",
+    "aboutLabel": "Professional Summary",
+    "expertiseLabel": "Skills and strengths",
+    "expertiseTitle": "Core Expertise",
+    "experienceTitle": "Professional Experience",
+    "educationTitle": "Education",
+    "achievementsTitle": "Key Achievements",
+    "toolkitTitle": "Tools & Platforms",
+    "servicesTitle": "Creative Capabilities",
+    "servicesSubtitle": "Design, video editing, and AI-assisted content skills grounded in professional experience.",
+    "contactTitle": "Let’s work together",
+    "contactDescription": "For professional opportunities and collaboration, get in touch by email or phone."
+  },
+  "projects": [],
+  "categories": [],
+  "showreel": {
+    "headline": "Showreel",
+    "subtitle": "Video editing and content production highlights.",
+    "videoUrl": "",
+    "thumbnailUrl": ""
+  },
+  "services": [
+    {
+      "id": "graphic-design",
+      "title": "Graphic Design & Digital Creatives",
+      "description": "Brand-aligned marketing visuals, campaign creatives, and social media assets."
+    },
+    {
+      "id": "video-editing",
+      "title": "Video Editing & Content Production",
+      "description": "Short-form videos, corporate videos, promotional content, storyboarding, and multi-camera editing."
+    },
+    {
+      "id": "social-content",
+      "title": "Social Media Content",
+      "description": "Instagram Reels, YouTube video editing, social video creatives, and trend-based editing."
+    },
+    {
+      "id": "post-production",
+      "title": "Editing & Post-Production",
+      "description": "Color correction, color grading, audio syncing, sound design basics, transitions, and effects."
+    },
+    {
+      "id": "ai-assisted-content",
+      "title": "AI-Assisted Creative Workflows",
+      "description": "AI video tools, automated captions, AI voiceovers, and AI-based visual enhancement."
+    },
+    {
+      "id": "content-design",
+      "title": "Content & Campaign Design",
+      "description": "Campaign creatives shaped around brand consistency, audience behavior, and performance insights."
+    }
+  ],
+  "creativeProcess": [],
+  "resume": {
+    "expertise": [
+      {
+        "title": "Video Editing & Content Production",
+        "skills": [
+          "Video Editing",
+          "Reels & Short-Form Content",
+          "Corporate Videos",
+          "Promotional Content",
+          "Storyboarding"
+        ]
+      },
+      {
+        "title": "Editing & Post-Production",
+        "skills": [
+          "Color Correction",
+          "Color Grading",
+          "Audio Syncing",
+          "Sound Design Basics",
+          "Transitions & Effects",
+          "Multi-Camera Editing"
+        ]
+      },
+      {
+        "title": "Content & Social Media Production",
+        "skills": [
+          "Instagram Reels",
+          "YouTube Video Editing",
+          "Social Media Video Creatives",
+          "Engagement-Driven Content",
+          "Trend-Based Editing"
+        ]
+      },
+      {
+        "title": "Creative Tools & Workflow",
+        "skills": [
+          "Adobe Premiere Pro",
+          "After Effects",
+          "CapCut",
+          "Canva",
+          "Workflow Optimization",
+          "Asset Management"
+        ]
+      },
+      {
+        "title": "AI-Assisted Video Production",
+        "skills": [
+          "AI Video Editing Tools",
+          "Automated Captions",
+          "AI Voiceovers",
+          "AI-Based Visual Enhancement",
+          "Creative AI Workflows"
+        ]
+      },
+      {
+        "title": "Graphic Design & Digital Content",
+        "skills": [
+          "Brand-Aligned Design",
+          "Marketing Visuals",
+          "Social Media Assets",
+          "Campaign Creatives",
+          "Audience-Informed Design"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Global Risk Management Institute (GRMI)",
+        "role": "Graphic Designer & Content Specialist",
+        "dates": "Mar 2025 – Present",
+        "highlights": [
+          "Created visuals for short-form video content contributing to 45% traffic growth and 29% follower increase.",
+          "Maintained brand consistency across marketing and communication assets.",
+          "Collaborated with marketing teams to develop campaign creatives aligned with audience behavior.",
+          "Used performance insights to refine design output and improve campaign effectiveness.",
+          "Designed high-impact digital creatives across campaigns, increasing engagement by 34%."
+        ]
+      },
+      {
+        "company": "Softage AI",
+        "role": "AI Content Specialist",
+        "dates": "May 2024 – Mar 2025",
+        "highlights": [
+          "Reviewed AI-generated content and visuals for clarity, quality, and consistency.",
+          "Supported AI-assisted creative workflows and content production systems.",
+          "Ensured brand-safe, high-quality output across AI-generated assets.",
+          "Collaborated with cross-functional teams to improve creative and content standards."
+        ]
+      },
+      {
+        "company": "Silicon India",
+        "role": "News Writer",
+        "dates": "Aug 2023 – May 2024",
+        "highlights": [
+          "Researched, wrote, and published accurate, engaging news articles across business, technology, and industry topics.",
+          "Conducted in-depth research and fact-checking to uphold credibility, accuracy, and editorial standards.",
+          "Monitored industry trends and breaking news to deliver timely, relevant, reader-focused content.",
+          "Collaborated with the editorial team to edit, proofread, and optimize articles for clarity, readability, and deadlines."
+        ]
+      },
+      {
+        "company": "Orissa Today",
+        "role": "Editorial Intern",
+        "dates": "Jan 2022 – Nov 2022",
+        "highlights": [
+          "Supported editorial content with structured layouts and visual enhancements.",
+          "Developed a strong storytelling sense that contributed to impactful content presentation."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "qualification": "Master’s in English Journalism",
+        "institution": "Guru Jambheshwar University of Science & Technology",
+        "dates": "2023 – 2024"
+      },
+      {
+        "qualification": "PG Diploma in English Journalism",
+        "institution": "Indian Institute of Mass Communication",
+        "dates": "2022 – 2023"
+      },
+      {
+        "qualification": "M.Sc. Physics",
+        "institution": "Sido Kanhu Murmu University",
+        "dates": "2020"
+      },
+      {
+        "qualification": "B.Sc. Physics",
+        "institution": "Sido Kanhu Murmu University",
+        "dates": "2017"
+      }
+    ],
+    "achievements": [
+      "Increased campaign engagement by 34% through high-performing visual creatives.",
+      "Drove 45% traffic growth using a video-first design strategy.",
+      "Improved brand consistency across multi-channel marketing campaigns.",
+      "Enhanced content performance with visually optimized layouts."
+    ]
+  },
+  "toolkit": [
+    {
+      "name": "Adobe Photoshop",
+      "category": "Design",
+      "enabled": true
+    },
+    {
+      "name": "Adobe Illustrator",
+      "category": "Design",
+      "enabled": true
+    },
+    {
+      "name": "Adobe InDesign",
+      "category": "Design",
+      "enabled": true
+    },
+    {
+      "name": "Adobe Premiere Pro",
+      "category": "Video",
+      "enabled": true
+    },
+    {
+      "name": "After Effects",
+      "category": "Video",
+      "enabled": true
+    },
+    {
+      "name": "Canva",
+      "category": "Design",
+      "enabled": true
+    },
+    {
+      "name": "Figma",
+      "category": "Design",
+      "level": "Basic",
+      "enabled": true
+    },
+    {
+      "name": "CapCut",
+      "category": "Video",
+      "enabled": true
+    },
+    {
+      "name": "Notion",
+      "category": "Productivity",
+      "enabled": true
+    },
+    {
+      "name": "ChatGPT",
+      "category": "AI",
+      "enabled": true
+    },
+    {
+      "name": "Gemini",
+      "category": "AI",
+      "enabled": true
+    }
+  ]
+}
