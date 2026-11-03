@@ -107,8 +107,16 @@ export function Hero() {
         activePlayerProject ? 'lg:max-h-none' : 'lg:max-h-[880px]'
       } w-full bg-[#000000] text-white flex flex-col justify-between pt-20 sm:pt-24 pb-6 sm:pb-8 px-4 sm:px-8 lg:px-12 overflow-hidden select-none`}
     >
-      {/* Abstract background, avoiding a portrait until the portfolio owner provides one */}
+      {/* Hero photo stays behind the contrast overlays and content. */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-cover opacity-60"
+          style={{
+            backgroundImage: "url('/images/image0.jpeg')",
+            backgroundPosition: 'center 38%',
+          }}
+        />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_35%,rgba(215,255,100,0.10),transparent_45%)]" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/75 to-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/80" />
