@@ -42,7 +42,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
         <a
           href="#hero"
           onClick={(e) => handleScrollTo(e, '#hero')}
-          className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#D7FF64] rounded-full px-1"
+          className="flex min-h-11 items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#D7FF64] rounded-full px-1"
           aria-label={`${SITE_CONFIG.ownerName} Home`}
         >
           <div className="w-8 h-8 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-xs font-mono font-bold tracking-tighter text-[#D7FF64] group-hover:bg-[#D7FF64] group-hover:text-black transition-colors">
@@ -59,13 +59,13 @@ export function Navbar({ onOpenContact }: NavbarProps) {
         </a>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden md:flex items-center gap-1 lg:gap-2">
+        <nav className="hidden lg:flex items-center gap-1 lg:gap-2">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={(e) => handleScrollTo(e, link.href)}
-              className="text-xs lg:text-sm font-medium tracking-wide text-[#888888] hover:text-white px-3 py-1.5 rounded-full hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-[#D7FF64]"
+              className="inline-flex min-h-11 items-center text-xs lg:text-sm font-medium tracking-wide text-[#888888] hover:text-white px-3 py-1.5 rounded-full hover:bg-white/5 transition-colors focus:outline-none focus:ring-2 focus:ring-[#D7FF64]"
             >
               {link.label}
             </a>
@@ -84,7 +84,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
                 handleScrollTo(e, '#contact');
               }
             }}
-            className="glass-button hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold tracking-wide hover:bg-[#D7FF64] hover:text-black px-5 py-2 rounded-full transition-all duration-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#D7FF64] focus:ring-offset-2 focus:ring-offset-black"
+            className="glass-button hidden sm:inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold tracking-wide hover:bg-[#D7FF64] hover:text-black px-5 py-2 rounded-full transition-all duration-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#D7FF64] focus:ring-offset-2 focus:ring-offset-black"
           >
             <span>Contact</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
@@ -94,7 +94,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#D7FF64]"
+            className="lg:hidden min-h-11 min-w-11 p-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#D7FF64]"
             aria-label={mobileMenuOpen ? 'Close Menu' : 'Open Menu'}
             aria-expanded={mobileMenuOpen}
           >
@@ -105,14 +105,14 @@ export function Navbar({ onOpenContact }: NavbarProps) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-2 mx-auto max-w-md glass-panel rounded-2xl p-4 border border-white/10 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden mt-2 mx-auto max-w-md glass-panel rounded-2xl p-4 border border-white/10 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleScrollTo(e, link.href)}
-                className="text-sm font-medium text-[#F5F5F5] hover:text-[#D7FF64] px-4 py-2.5 rounded-lg hover:bg-white/5 transition-colors"
+                className="min-h-11 text-sm font-medium text-[#F5F5F5] hover:text-[#D7FF64] px-4 py-2.5 rounded-lg hover:bg-white/5 transition-colors"
               >
                 {link.label}
               </a>
@@ -120,7 +120,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, '#contact')}
-              className="mt-2 text-center text-xs font-semibold uppercase tracking-wider bg-[#D7FF64] text-black py-2.5 rounded-xl transition-colors hover:brightness-110"
+              className="mt-2 min-h-11 text-center text-xs font-semibold uppercase tracking-wider bg-[#D7FF64] text-black py-2.5 rounded-xl transition-colors hover:brightness-110"
             >
               Contact
             </a>

@@ -1,4 +1,4 @@
-import { DRIVE_FOLDERS, getDriveVideos } from '@/lib/drive-folders';
+import { DRIVE_FOLDERS, getWebsiteDriveVideos } from '@/lib/drive-folders';
 
 export async function GET(request: Request) {
   const id = new URL(request.url).searchParams.get('id');
@@ -8,7 +8,9 @@ export async function GET(request: Request) {
 
   try {
     const folders = await Promise.all(
-      DRIVE_FOLDERS.map((folder) => getDriveVideos(folder.id))
+      DRIVE_FOLDERS.filter(({ websiteVideoTitles }) => websiteVideoTitles.length > 0).map(
+        (folder) => getWebsiteDriveVideos(folder.id)
+      )
     );
     const videoExists = folders.some((videos) => videos.some((video) => video.id === id));
     if (!videoExists) {

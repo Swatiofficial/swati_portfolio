@@ -1,13 +1,15 @@
-import { DRIVE_FOLDERS, getDriveVideos } from '@/lib/drive-folders';
+import { DRIVE_FOLDERS, getWebsiteDriveVideos } from '@/lib/drive-folders';
 
 export async function GET() {
   try {
     const folders = await Promise.all(
-      DRIVE_FOLDERS.map(async ({ id, label }) => ({
-        id,
-        label,
-        videos: await getDriveVideos(id),
-      }))
+      DRIVE_FOLDERS.filter(({ websiteVideoTitles }) => websiteVideoTitles.length > 0).map(
+        async ({ id, label }) => ({
+          id,
+          label,
+          videos: await getWebsiteDriveVideos(id),
+        })
+      )
     );
     return Response.json(folders);
   } catch (error) {

@@ -96,9 +96,9 @@ export function SelectedWork({ onSelectProject }: SelectedWorkProps) {
   }, []);
 
   return (
-    <section id="work" className="relative py-28 sm:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
+    <section id="work" className="relative overflow-x-clip py-20 sm:py-28 lg:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
       {/* Background radial accent */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-zinc-900/30 rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute inset-x-0 top-1/2 mx-auto -translate-y-1/2 w-full max-w-[800px] h-[500px] bg-zinc-900/30 rounded-full blur-[180px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
@@ -169,7 +169,7 @@ export function SelectedWork({ onSelectProject }: SelectedWorkProps) {
                       type="button"
                       onClick={() => setSelectedFolderId(folder.id)}
                       aria-pressed={isSelected}
-                      className={`inline-flex shrink-0 items-center gap-2 px-4 py-2.5 text-xs font-mono uppercase tracking-wider border transition-colors ${
+                      className={`inline-flex min-h-11 shrink-0 items-center gap-2 px-4 py-2.5 text-xs font-mono uppercase tracking-wider border transition-colors ${
                         isSelected
                           ? 'border-[#D7FF64] bg-[#D7FF64] text-black font-bold'
                           : 'border-white/10 bg-zinc-950/80 text-zinc-400 hover:border-white/30 hover:text-white'

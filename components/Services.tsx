@@ -18,7 +18,7 @@ export function Services({ onSelectService }: ServicesProps) {
   };
 
   return (
-    <section id="services" className="relative py-28 sm:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
+    <section id="services" className="relative py-20 sm:py-28 lg:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -70,7 +70,7 @@ export function Services({ onSelectService }: ServicesProps) {
                 <button
                   type="button"
                   onClick={() => handleInquire(service)}
-                  className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-white group-hover:text-[#D7FF64] transition-colors focus:outline-none focus:ring-1 focus:ring-[#D7FF64] rounded"
+                  className="inline-flex min-h-11 items-center gap-2 text-xs font-mono tracking-wider uppercase text-white group-hover:text-[#D7FF64] transition-colors focus:outline-none focus:ring-1 focus:ring-[#D7FF64] rounded"
                 >
                   <span>Inquire for Project</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

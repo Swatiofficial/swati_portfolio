@@ -6,7 +6,7 @@ import { RESUME, SECTION_COPY } from '@/data/projects';
 
 export function Resume() {
   return (
-    <section id="resume" className="relative py-28 sm:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
+    <section id="resume" className="relative py-20 sm:py-28 lg:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         <div id="expertise" className="scroll-mt-24 mb-24">
           <div className="mb-10">

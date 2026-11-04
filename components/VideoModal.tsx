@@ -98,7 +98,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
         onClick={(e) => e.stopPropagation()}
         className={`relative w-full ${
           isShort ? 'max-w-md' : 'max-w-5xl'
-        } bg-[#0d0d0f] border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col transition-all duration-300 max-h-[95vh]`}
+        } bg-[#0d0d0f] border border-white/10 rounded-2xl overflow-hidden shadow-2xl flex flex-col transition-all duration-300 max-h-[95vh] max-h-[95dvh]`}
       >
         {/* Modal Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 bg-black/40">
@@ -121,7 +121,7 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
             ref={closeButtonRef}
             onClick={onClose}
             type="button"
-            className="p-2 rounded-full text-[#888888] hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#D7FF64] transition-colors"
+            className="min-h-11 min-w-11 p-2 rounded-full text-[#888888] hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#D7FF64] transition-colors"
             aria-label="Close video dialog (Escape)"
           >
             <X className="w-5 h-5" />

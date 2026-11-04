@@ -115,7 +115,7 @@ export function Contact({ preselectedService }: ContactProps) {
   )}`;
 
   return (
-    <section id="contact" className="relative py-28 sm:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
+    <section id="contact" className="relative py-20 sm:py-28 lg:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Headline, Copy, and Direct Links */}
@@ -269,7 +269,7 @@ export function Contact({ preselectedService }: ContactProps) {
                       placeholder="Jane Doe / Brand Producer"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-zinc-600 text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-zinc-600 text-base sm:text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     />
                   </div>
 
@@ -286,7 +286,7 @@ export function Contact({ preselectedService }: ContactProps) {
                       placeholder="producer@agency.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-zinc-600 text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-zinc-600 text-base sm:text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     />
                   </div>
                 </div>
@@ -302,7 +302,7 @@ export function Contact({ preselectedService }: ContactProps) {
                       value={activeService}
                       disabled={status === 'loading'}
                       onChange={(e) => setCustomService(e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white text-base sm:text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     >
                       {SERVICES.map((s) => (
                         <option key={s.id} value={s.title} className="bg-zinc-900 text-white">
@@ -325,7 +325,7 @@ export function Contact({ preselectedService }: ContactProps) {
                       value={formData.budgetRange}
                       disabled={status === 'loading'}
                       onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white text-base sm:text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                     >
                       {BUDGET_OPTIONS.map((range) => (
                         <option key={range} value={range} className="bg-zinc-900 text-white">
@@ -349,7 +349,7 @@ export function Contact({ preselectedService }: ContactProps) {
                     placeholder="Tell me about your vision, raw footage volume, timeline, target platform, pacing, or reference films..."
                     value={formData.description}
                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-zinc-600 text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors resize-none"
+                    className="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white placeholder-zinc-600 text-base sm:text-sm focus:outline-none focus:border-[#D7FF64] focus:ring-1 focus:ring-[#D7FF64] disabled:opacity-50 disabled:cursor-not-allowed transition-colors resize-none"
                   />
                 </div>
 

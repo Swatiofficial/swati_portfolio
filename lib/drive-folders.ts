@@ -5,6 +5,7 @@ export interface DriveFolder {
   label: string;
   folderId: string;
   url: string;
+  websiteVideoTitles: string[];
 }
 
 export interface DriveVideo {
@@ -20,18 +21,39 @@ export const DRIVE_FOLDERS: DriveFolder[] = [
     label: 'Insta Videos',
     folderId: '18fbXvp8t6I-mATjlOhgnD7dDcshUgQbP',
     url: 'https://drive.google.com/drive/folders/18fbXvp8t6I-mATjlOhgnD7dDcshUgQbP?usp=drive_link',
+    websiteVideoTitles: [
+      "supriya_byju's(3)",
+      'Saloni Video_GRMI',
+      'supriya_3 frames (4)',
+      'GRMI Explanation_Harshita',
+      'Saloni Video_Teaser',
+    ],
   },
   {
     id: 'treading',
-    label: 'Treading Videos',
+    label: 'Trending Videos',
     folderId: '1p6oMBB0fCMGvXKh5P9hviaajs9xe72YL',
     url: 'https://drive.google.com/drive/folders/1p6oMBB0fCMGvXKh5P9hviaajs9xe72YL?usp=drive_link',
+    websiteVideoTitles: [
+      'Career Problems Video_Chandan',
+      'Dhurandar Video',
+      'Fun- with students (asking movie title, fav place) (3) (1)',
+      'salary video',
+      'supriya_obsession video',
+    ],
   },
   {
     id: 'youtube',
     label: 'YT Videos',
     folderId: '1h6CSk7nmhbj-BDeeC6O1ti-mpfV2o7TJ',
     url: 'https://drive.google.com/drive/folders/1h6CSk7nmhbj-BDeeC6O1ti-mpfV2o7TJ?usp=drive_link',
+    websiteVideoTitles: [
+      'batch 17_podcast 2 (rapid fire)',
+      'SN video_Altera_1',
+      'Supriya_campus tour (8)',
+      'Supriya_ college video',
+      'supriya_Companies went off reel (4)',
+    ],
   },
 ];
 
@@ -96,4 +118,29 @@ export async function getDriveVideos(folderId: string): Promise<DriveVideo[]> {
       embedPath: `/api/drive/video?id=${encodeURIComponent(id)}`,
     };
   }).filter((video): video is DriveVideo => video !== null);
+}
+
+export async function getWebsiteDriveVideos(folderId: string): Promise<DriveVideo[]> {
+  const folder = DRIVE_FOLDERS.find((item) => item.id === folderId);
+  if (!folder) {
+    throw new Error('Video folder not found.');
+  }
+
+  if (folder.websiteVideoTitles.length === 0) {
+    return [];
+  }
+
+  const titleOrder = new Map(folder.websiteVideoTitles.map((title, index) => [title, index]));
+  const videos = await getDriveVideos(folderId);
+  const getOrder = (video: DriveVideo) => {
+    const index = titleOrder.get(video.title.replace(/\.[^.]+$/, ''));
+    if (index === undefined) {
+      throw new Error(`Video "${video.title}" is not in the website selection for "${folder.label}".`);
+    }
+    return index;
+  };
+
+  return videos
+    .filter((video) => titleOrder.has(video.title.replace(/\.[^.]+$/, '')))
+    .sort((a, b) => getOrder(a) - getOrder(b));
 }

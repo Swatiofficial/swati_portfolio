@@ -111,33 +111,33 @@ export function Hero() {
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-cover opacity-60"
+          className="absolute inset-0 bg-cover opacity-90"
           style={{
             backgroundImage: "url('/images/image0.jpeg')",
             backgroundPosition: 'center 38%',
           }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_35%,rgba(215,255,100,0.10),transparent_45%)]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/75 to-black/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/65" />
         <div className="absolute inset-0 film-grain opacity-20" />
       </div>
 
       {/* Top Header Eyebrow info (Brand identity & availability) */}
       <div className="relative z-10 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1 border-b border-white/5 pb-3">
-        <div className="flex items-center gap-2.5">
+        {/* <div className="flex items-center gap-2.5">
           <div className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D7FF64] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D7FF64]"></span>
           </div>
-          <span className="text-[11px] font-mono tracking-widest uppercase text-zinc-400">
+          {/* <span className="text-[11px] font-mono tracking-widest uppercase text-zinc-400">
             {SITE_CONFIG.availabilityStatus}
-          </span>
-        </div>
+          </span> 
+        </div> */}
 
-        <div className="hidden md:flex items-center gap-3 text-[11px] font-mono text-zinc-500 tracking-wider">
+        {/* <div className="hidden md:flex items-center gap-3 text-[11px] font-mono text-zinc-500 tracking-wider">
           <span>{SITE_CONFIG.titleRole}</span>
-        </div>
+        </div> */}
       </div>
 
       {/* Center/Bottom Grid: Compact, balanced composition with reduced inter-column gap */}

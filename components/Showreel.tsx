@@ -10,9 +10,9 @@ export function Showreel() {
   const parsed = parseVideoSource(SHOWREEL_CONFIG.videoUrl);
 
   return (
-    <section id="showreel" className="relative py-28 sm:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5 overflow-hidden">
+    <section id="showreel" className="relative py-20 sm:py-28 lg:py-36 px-4 sm:px-8 lg:px-14 bg-black border-t border-white/5 overflow-hidden">
       {/* Background radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-amber-950/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute inset-x-0 top-1/2 mx-auto -translate-y-1/2 w-full max-w-[700px] h-[500px] bg-amber-950/15 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
@@ -73,7 +73,7 @@ export function Showreel() {
               <div className="absolute top-5 left-5 font-mono text-[11px] text-zinc-500 tracking-widest">
                 SHOWREEL PREVIEW
               </div>
-              <div className="absolute top-5 right-5 font-mono text-[11px] text-zinc-500 tracking-widest">
+              <div className="absolute top-5 right-5 hidden font-mono text-[11px] text-zinc-500 tracking-widest sm:block">
                 VIDEO &bull; DESIGN &bull; CONTENT
               </div>
 

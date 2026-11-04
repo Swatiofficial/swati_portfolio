@@ -2,8 +2,8 @@
   "site": {
     "ownerName": "Swati Kumari",
     "brandName": "Swati Kumari",
-    "titleRole": "Video Editor | Graphic Designer | Brand & Digital Design",
-    "tagline": "Brand & Digital Design | Video Editing | AI-Assisted Visual Storytelling",
+    "titleRole": "Video Editor | Graphic Designer | Branding & Marketing",
+    "tagline": "Branding & Marketing | Video Editing | AI-Assisted Visual Storytelling",
     "heroHeadline": "Visual stories built with clarity and purpose.",
     "heroSupportingText": "Graphic Designer & Content Specialist",
     "heroDescription": "Creative Video Editor and Graphic Designer with a strong foundation in digital content and visual storytelling. Experienced in designing brand-aligned creatives, high-performing social media assets, and marketing visuals. Skilled in combining design principles, audience insights, and AI-assisted workflows to create engaging, conversion-focused designs.",
@@ -20,7 +20,7 @@
         "Video-first design",
         "AI-assisted creative workflows"
       ],
-      "portraitImage": ""
+      "portraitImage": "/images/image1.jpeg"
     },
     "socialLinks": []
   },
