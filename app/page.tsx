@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { SelectedWork } from '@/components/SelectedWork';
+import { Graphics } from '@/components/Graphics';
 import { Showreel } from '@/components/Showreel';
 import { About } from '@/components/About';
 import { Resume } from '@/components/Resume';
@@ -49,6 +50,9 @@ export default function Home() {
 
       {/* Selected Work Portfolio Grid with Filter System */}
       <SelectedWork onSelectProject={handleOpenProjectModal} />
+
+      {/* Graphic design collections */}
+      <Graphics />
 
       {/* Official 60s Showreel Player */}
       <Showreel />
